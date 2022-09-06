@@ -1,0 +1,16 @@
+<h1>Vinos</h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @response.each do |wine| %>
+      <tr>
+        <td><%= wine %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
